@@ -14,24 +14,51 @@
     </div>
     <div class="img-2"></div>
     <div class="img-3"></div>
-    <form action="">
-      <div class="form-control">
-        <label for="name">CARDHOLDER NAME</label>
-        <input type="text" id="name" placeholder="eg. Have Peace">
-      </div>
-      <div class="form-control">
-        <label for="number">CARD NUMBER</label>
-        <input type="number" id="number" placeholder="eg. 1234 5678 9123 0000">
-      </div>
-      <div class="form-control">
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="Enter Phone">
-      </div>
-      <div class="form-control">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
-      </div>
-      <button type="submit">Submit</button>
+    <form class="credit-card">
+      <label for="name">CARDHOLDER NAME</label>
+      <input type="text" name="name" id="name" placeholder="e.g. Have Peace">
+      <label for="card-number">CARD NUMBER</label>
+        <input type="text" class="card-number" placeholder="Card Number">
+  
+        <div class="date-field">
+          <div class="month">
+            <select name="Month">
+              <option value="month">MM</option>
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+          </div>
+          <div class="year">
+            <select name="Year">
+              <option value="year">YY</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2016">2025</option>
+              <option value="2017">2026</option>
+              <option value="2018">2027</option>
+              <option value="2019">2028</option>
+              <option value="2016">2029</option>
+              <option value="2017">2030</option>
+            </select>
+          </div>
+            <div class="cvc-input">
+              <input type="text" placeholder="cvc">
+            </div>
+        </div>
+        <button type="submit" class="proceed-btn"><a href="#">Confirm</a></button>
     </form>
   </aside>
 </body>
