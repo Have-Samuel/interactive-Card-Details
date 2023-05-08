@@ -17,6 +17,7 @@ aside {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+
   /* position: relative; */
 }
 
@@ -29,5 +30,32 @@ aside {
 }
 
 .img-2 {
+  background: url('./images/bg-card-back.png') no-repeat;
+  background-size: cover;
   position: absolute;
+  height: 157px;
+  width: 286px;
+  left: 73px;
+  top: 32px;
+}
+
+.img-3 {
+  background: url('./images/bg-card-front.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 157px;
+  width: 286px;
+  left: 16px;
+  top: 126px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  /* position: relative; */
+  margin-top: 4rem;
 }
