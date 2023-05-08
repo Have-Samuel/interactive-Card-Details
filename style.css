@@ -8,17 +8,13 @@
 }
 
 body {
-  width: 375px;
-  height: 812px;
   background: #faf8f8;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 aside {
-  background: url('./images/bg-main-mobile.png') no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
