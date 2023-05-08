@@ -17,4 +17,17 @@ aside {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  /* position: relative; */
+}
+
+.img-1 {
+  height: 240px;
+  width: 375px;
+  background: url('./images/bg-main-mobile.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.img-2 {
+  position: absolute;
 }
