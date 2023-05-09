@@ -161,6 +161,7 @@ form button {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1rem;
+  box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 form button a {
@@ -169,6 +170,34 @@ form button a {
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
+}
+
+.complete a {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #21092f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 3rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+  box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #fff;
+  border: 1px solid #21092f;
+}
+
+form button:hover a,
+form button:focus a {
+  color: #21092f;
 }
 
 .complete {
@@ -215,20 +244,4 @@ form button a {
   line-height: 23px;
   text-align: center;
   color: #8f8694;
-}
-
-.complete a {
-  width: 100%;
-  padding: 12px 20px;
-  background-color: #21092f;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 3rem;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
-  text-align: center;
 }
