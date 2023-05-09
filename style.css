@@ -79,6 +79,7 @@ input[type="text"] {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .month,
@@ -116,7 +117,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
   gap: 8px;
 }
 
@@ -148,6 +149,7 @@ p {
   border-radius: 8px;
   outline: none;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 form button {
@@ -308,6 +310,7 @@ form button:focus a {
     z-index: 1;
   }
 
+
   .credit-card {
     display: flex;
     justify-content: center;
@@ -332,7 +335,7 @@ form button:focus a {
     background-color: rgb(250, 252, 251);
     position: absolute;
     right: -645px;
-    top: 250px;
+    top: 247px;
     margin-top: 1rem;
     padding: 0 20px;
     visibility: hidden;
