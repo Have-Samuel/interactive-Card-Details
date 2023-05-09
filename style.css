@@ -72,3 +72,21 @@ input[type="text"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #21092f;
+  opacity: 0.25;
+}
+
+label,
+p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: #21092f;
+  margin-bottom: 8px;
+}
