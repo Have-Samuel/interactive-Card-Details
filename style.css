@@ -47,7 +47,7 @@ aside {
   width: 286px;
   left: 20px;
   top: 126px;
-  box-shadow: rgba(25, 24, 66, 0.25) 0 54px 55px, rgba(17, 21, 59, 0.12) 0 -12px 30px, rgba(23, 26, 66, 0.12) 0 4px 6px, rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 80px;
 }
 
 .img-4 {
@@ -276,6 +276,7 @@ form button:focus a {
     height: 245px;
     left: 258px;
     top: 439px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 24px 80px;
   }
 
   .img-3 {
@@ -284,6 +285,7 @@ form button:focus a {
     height: 245px;
     left: 164px;
     top: 157px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 80px;
   }
 
   .img-4 {
