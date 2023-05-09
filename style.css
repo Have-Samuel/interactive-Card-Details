@@ -222,7 +222,7 @@ form button:focus a {
   top: 338px;
   margin-top: 1rem;
   padding: 0 20px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .img-5 {
