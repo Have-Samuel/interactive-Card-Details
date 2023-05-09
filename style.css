@@ -169,3 +169,53 @@ form button a {
   font-weight: 500;
   line-height: 23px;
 }
+
+.complete {
+  height: 291px;
+  width: 327px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  /* position: absolute; */
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.img-5 {
+  height: 80px;
+  width: 80px;
+  left: 148px;
+  top: 341px;
+  background: url('./images/icon-complete.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.complete p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+  color: #21092f;
+  margin-top: 1rem;
+}
+
+.complete a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #21092f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+}
