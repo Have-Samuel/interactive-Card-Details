@@ -171,21 +171,24 @@ form button a {
 }
 
 .complete {
-  height: 291px;
-  width: 327px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 370px;
+  width: 375px;
   margin: 0 auto;
-  background-color: aquamarine;
-  /* position: absolute; */
+  background-color: rgb(248, 252, 250);
+  position: absolute;
+  left: 0;
+  top: 338px;
   margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 0 20px;
 }
 
 .img-5 {
   height: 80px;
   width: 80px;
-  left: 148px;
-  top: 341px;
   background: url('./images/icon-complete.svg') no-repeat;
   background-size: cover;
   position: absolute;
@@ -201,10 +204,10 @@ form button a {
 }
 
 .complete a {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   width: 100%;
   padding: 12px 20px;
   background-color: #21092f;
