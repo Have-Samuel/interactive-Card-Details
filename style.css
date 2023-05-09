@@ -90,3 +90,20 @@ p {
   color: #21092f;
   margin-bottom: 8px;
 }
+
+.date-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 12px 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
