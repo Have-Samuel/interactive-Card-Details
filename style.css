@@ -270,22 +270,27 @@ form button:focus a {
   }
 
   .img-2 {
-    background: url('./images/bg-pattern-desktop.svg') no-repeat;
-    background-size: cover;
     position: absolute;
-    left: 483px;
-    top: 0;
-    width: 857px;
-    height: 850px;
+    width: 447px;
+    height: 245px;
+    left: 258px;
+    top: 439px;
   }
 
   .img-3 {
-    background: url('./images/image-header-desktop.png') no-repeat;
-    background-size: cover;
     position: absolute;
-    left: 483px;
-    top: 0;
-    width: 857px;
-    height: 850px;
+    width: 447px;
+    height: 245px;
+    left: 164px;
+    top: 157px;
+  }
+
+  .img-4 {
+    position: absolute;
+    width: 84px;
+    height: 47px;
+    left: 190px;
+    top: 180px;
+    z-index: 1;
   }
 }
