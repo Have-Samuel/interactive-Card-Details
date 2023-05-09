@@ -246,6 +246,46 @@ form button:focus a {
   color: #8f8694;
 }
 
-/* @media (min-width: 786px) {
+@media (min-width: 786px) {
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem auto;
+    background-color: rgb(248, 252, 250);
+    position: relative;
+    height: 850px;
+    width: 1340px;
+  }
 
-  } */
+  .img-1 {
+    background: url('./images/bg-main-desktop.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 483px;
+    height: 850px;
+  }
+
+  .img-2 {
+    background: url('./images/bg-pattern-desktop.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 483px;
+    top: 0;
+    width: 857px;
+    height: 850px;
+  }
+
+  .img-3 {
+    background: url('./images/image-header-desktop.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 483px;
+    top: 0;
+    width: 857px;
+    height: 850px;
+  }
+}
