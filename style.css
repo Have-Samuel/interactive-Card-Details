@@ -49,6 +49,16 @@ aside {
   box-shadow: rgba(25, 24, 66, 0.25) 0 54px 55px, rgba(17, 21, 59, 0.12) 0 -12px 30px, rgba(23, 26, 66, 0.12) 0 4px 6px, rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
+.img-4 {
+  height: 30px;
+  width: 54px;
+  left: 35px;
+  top: 145px;
+  background: url('./images/card-logo.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -66,6 +76,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
 }
 
 .month,
@@ -134,6 +145,7 @@ p {
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
+  cursor: pointer;
 }
 
 form button {
@@ -156,4 +168,54 @@ form button a {
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
+}
+
+.complete {
+  height: 291px;
+  width: 327px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  /* position: absolute; */
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.img-5 {
+  height: 80px;
+  width: 80px;
+  left: 148px;
+  top: 341px;
+  background: url('./images/icon-complete.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.complete p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+  color: #21092f;
+  margin-top: 1rem;
+}
+
+.complete a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #21092f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
 }
