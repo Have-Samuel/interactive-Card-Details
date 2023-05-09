@@ -6,9 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
   <title>Interactive Card Detials</title>
 </head>
 <body>
-  
+  <aside>
+    <div class="all-images">
+    <div class="img-1"></div>
+    <div class="img-2"></div>
+    <div class="img-3"></div>
+    </div>
+    <form class="credit-card">
+      <label for="name">CARDHOLDER NAME</label>
+      <input type="text" name="name" id="name" placeholder="e.g. Have Peace">
+      <label for="card-number">CARD NUMBER</label>
+        <input type="number" class="card-number" placeholder="e.g. 1234 5678 9123 000">
+        <p>EXE.  DATE (MM/YY) CVC</p>
+        <div class="date-field">
+          <div class="month">
+            <select name="Month" >
+              <option value="month">MM</option>
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+          </div>
+          <div class="year">
+            <select name="Year">
+              <option value="">YY</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2016">2025</option>
+              <option value="2017">2026</option>
+              <option value="2018">2027</option>
+              <option value="2019">2028</option>
+              <option value="2016">2029</option>
+              <option value="2017">2030</option>
+            </select>
+          </div>
+              <input class="cvc" type="number" placeholder="e.g.123">
+        </div>
+        <button type="submit" class="proceed-btn"><a href="#">Confirm</a></button>
+    </form>
+  </aside>
 </body>
 </html>

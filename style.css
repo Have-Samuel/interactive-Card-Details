@@ -6,3 +6,154 @@
   box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
 }
+
+body {
+  background: #dbd9d9;
+  position: relative;
+}
+
+aside {
+  width: 375px;
+  height: 724px;
+  margin: 5rem auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.img-1 {
+  height: 240px;
+  width: 375px;
+  background: url('./images/bg-main-mobile.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.img-2 {
+  background: url('./images/bg-card-back.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 157px;
+  width: 286px;
+  left: 73px;
+  top: 32px;
+}
+
+.img-3 {
+  background: url('./images/bg-card-front.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 157px;
+  width: 286px;
+  left: 20px;
+  top: 126px;
+  box-shadow: rgba(25, 24, 66, 0.25) 0 54px 55px, rgba(17, 21, 59, 0.12) 0 -12px 30px, rgba(23, 26, 66, 0.12) 0 4px 6px, rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 7rem;
+  width: 327px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.month,
+.year,
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+::placeholder,
+select {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #21092f;
+  opacity: 0.25;
+}
+
+label,
+p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: #21092f;
+  margin-bottom: 8px;
+}
+
+.date-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.month select {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.year select {
+  padding: 10px 10px;
+}
+
+.cvc {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.card-number {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #21092f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+form button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
