@@ -140,7 +140,7 @@ p {
   cursor: pointer;
 }
 
-.card-number {
+.number {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -224,7 +224,7 @@ form button:focus a {
   top: 338px;
   margin-top: 1rem;
   padding: 0 20px;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .img-5 {
@@ -309,7 +309,6 @@ form button:focus a {
     top: 180px;
     z-index: 1;
   }
-
 
   .credit-card {
     display: flex;
