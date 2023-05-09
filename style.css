@@ -39,6 +39,7 @@ aside {
 }
 
 .img-3 {
+  z-index: 1;
   background: url('./images/bg-card-front.png') no-repeat;
   background-size: cover;
   position: absolute;
@@ -160,6 +161,7 @@ form button {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1rem;
+  box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 form button a {
@@ -170,52 +172,80 @@ form button a {
   line-height: 23px;
 }
 
-.complete {
-  height: 291px;
-  width: 327px;
-  margin: 0 auto;
-  background-color: aquamarine;
-  /* position: absolute; */
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.img-5 {
-  height: 80px;
-  width: 80px;
-  left: 148px;
-  top: 341px;
-  background: url('./images/icon-complete.svg') no-repeat;
-  background-size: cover;
-  position: absolute;
-}
-
-.complete p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
-  text-align: center;
-  color: #21092f;
-  margin-top: 1rem;
-}
-
 .complete a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   padding: 12px 20px;
   background-color: #21092f;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 3rem;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
   text-align: center;
+  box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
+
+form button:hover,
+form button:focus {
+  background-color: #fff;
+  border: 1px solid #21092f;
+}
+
+form button:hover a,
+form button:focus a {
+  color: #21092f;
+}
+
+.complete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 370px;
+  width: 375px;
+  margin: 0 auto;
+  background-color: rgb(248, 252, 250);
+  position: absolute;
+  left: 0;
+  top: 338px;
+  margin-top: 1rem;
+  padding: 0 20px;
+  visibility: hidden;
+}
+
+.img-5 {
+  height: 80px;
+  width: 80px;
+  background: url('./images/icon-complete.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 148px;
+  top: -20px;
+}
+
+.complete h2 {
+  color: #21092f;
+  margin-bottom: 2rem;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.complete p {
+  width: 263px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: center;
+  color: #8f8694;
+}
+
+/* @media (min-width: 786px) {
+
+  } */
