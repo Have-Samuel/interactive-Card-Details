@@ -72,12 +72,6 @@ input[type="text"] {
   border-radius: 4px;
 }
 
-/* select [name="Month"]::-webkit-inner-spin-button,
-select[name="year"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-} */
-
 .month,
 .year,
 select {
@@ -85,6 +79,10 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  /* text-align: center; */
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 ::placeholder,
@@ -115,16 +113,13 @@ p {
 }
 
 .month select {
-  width: 90%;
+  width: 100%;
   padding: 10px 10px;
-  /* margin: 8px 0; */
   border-radius: 4px;
 }
 
 .year select {
-  width: 100%;
   padding: 10px 20px;
-  margin: 8px 0;
   border-radius: 4px;
 }
 
