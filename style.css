@@ -248,6 +248,10 @@ form button:focus a {
 }
 
 @media (min-width: 786px) {
+  body {
+    position: relative;
+  }
+
   aside {
     display: flex;
     justify-content: center;
@@ -258,6 +262,7 @@ form button:focus a {
     position: relative;
     height: 850px;
     width: 1340px;
+    /* visibility: hidden; */
   }
 
   .img-1 {
@@ -268,9 +273,11 @@ form button:focus a {
     top: 0;
     width: 483px;
     height: 850px;
+    display: none;
   }
 
   .img-2 {
+    display: none;
     position: absolute;
     width: 447px;
     height: 245px;
@@ -280,6 +287,7 @@ form button:focus a {
   }
 
   .img-3 {
+    display: none;
     position: absolute;
     width: 447px;
     height: 245px;
@@ -308,5 +316,53 @@ form button:focus a {
     margin-top: 1rem;
     padding: 0 20px;
     margin-right: 10rem;
+    visibility: hidden;
   }
+
+  .complete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 370px;
+    width: 375px;
+    margin: 0 auto;
+    border: 5px solid rgb(216, 24, 10);
+    background-color: rgb(10, 216, 113);
+    /* position: absolute;
+    left: 0;
+    top: 338px; */
+    margin-top: 1rem;
+    padding: 0 20px;
+    /* visibility: hidden; */
+  }
+
+  /* .img-5 {
+    height: 80px;
+    width: 80px;
+    background: url('./images/icon-complete.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 148px;
+    top: -20px;
+  }
+
+  .complete h2 {
+    color: #21092f;
+    margin-bottom: 2rem;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .complete p {
+    width: 263px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    color: #8f8694;
+  } */
 }
