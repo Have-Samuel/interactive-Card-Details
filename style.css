@@ -8,17 +8,19 @@
 }
 
 body {
-  background: #faf8f8;
+  background: #dbd9d9;
+  position: relative;
 }
 
 aside {
+  /* height: 704px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-
-  /* position: relative; */
+  background-color: #fff;
+  position: relative;
 }
 
 .img-1 {
@@ -51,22 +53,18 @@ aside {
 }
 
 form {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  flex-direction: column;
   margin: 0 auto;
-
-  /* position: relative; */
-  margin-top: 4rem;
-  height: 328px;
+  margin-top: 7rem;
   width: 327px;
 }
 
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 12px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -79,7 +77,6 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  /* text-align: center; */
   outline: none;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -114,20 +111,49 @@ p {
 
 .month select {
   width: 100%;
-  padding: 10px 10px;
-  border-radius: 4px;
-}
-
-.year select {
   padding: 10px 20px;
   border-radius: 4px;
 }
 
-input[type="number"] {
+.year select {
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+.cvc {
   width: 50%;
-  padding: 12px 8px;
+  padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-number {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #21092f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
 }
