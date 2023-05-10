@@ -7,7 +7,11 @@ const yearInput = document.querySelector('#year-js');
 // create Error
 function putAnError(input, msg) {
   const formCatch = input.parentElement;
-  
+  const small = formCatch.querySelector('small');
+
+  small.innerText = msg;
+
+  formCatch.className = 'form__card-input error';
 }
 
 // Validation

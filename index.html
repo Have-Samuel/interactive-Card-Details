@@ -18,11 +18,11 @@
     <div class="img-4"></div>
     </div>
     <form class="credit-card" id="form-js">
-      <label for="name">CARDHOLDER NAME
+      <label class="form__card-input" for="name">CARDHOLDER NAME
         <input type="text" name="name" id="name" placeholder="e.g. Have Peace">
         <small>Error</small>
       </label>      
-      <label for="card-number">CARD NUMBER
+      <label class="form__card-input" for="card-number">CARD NUMBER
         <input type="number" class="number" id="card-number" placeholder="e.g. 1234 5678 9123 000">
         <small>Error</small>
       </label>
@@ -60,10 +60,10 @@
               <option value="2016">2029</option>
               <option value="2017">2030</option>
             </select>
-          </div>
+          </div class="">
               <input class="cvc" type="number" placeholder="e.g.123">
+              <small>Error</small>
         </div>
-        <small>Error</small>
         <button type="submit" class="proceed-btn"><a href="#">Confirm</a></button>
     </form>
     <div class="complete">
