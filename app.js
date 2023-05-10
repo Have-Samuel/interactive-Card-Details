@@ -23,7 +23,7 @@ function validate() {
 
   // Regex For card number
   function isCardNumber(numValue) {
-    return /^([0-9]{4})[-]([0-9]{4})[-]([0-9]{4})[-]([0-9]{4})$/.test(numValue);
+    return /^\d{16}$/.test(numValue);
   }
 
   if (!nameValue) {
@@ -40,10 +40,15 @@ function validate() {
 // Remove Error
 function removeError() {
   const formError = document.querySelectorAll('.error');
-
+  console.log(formError);
   formError.forEach((error) => {
     error.classList.remove('error');
   });
+}
+
+// Reset form
+function resetForm() {
+  form.reset();
 }
 
 // Form submit
@@ -52,4 +57,5 @@ form.addEventListener('submit', (eve) => {
   eve.preventDefault();
   removeError();
   validate();
+  resetForm();
 });
