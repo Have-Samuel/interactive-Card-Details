@@ -139,6 +139,13 @@ p {
   cursor: pointer;
 }
 
+/* .c-v-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+} */
+
 .number {
   width: 100%;
   padding: 12px 20px;

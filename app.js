@@ -5,7 +5,7 @@ const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('#year-js');
 
 // create Error
-function putAnError(input, msg) {
+function createError(input, msg) {
   const formCatch = input.parentElement;
   const small = formCatch.querySelector('small');
 
