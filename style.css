@@ -14,7 +14,7 @@ body {
 
 aside {
   width: 375px;
-  height: 724px;
+  height: 714px;
   margin: 5rem auto;
   background-color: #fff;
   position: relative;
@@ -181,7 +181,7 @@ form button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
   color: #fff;
   text-decoration: none;
