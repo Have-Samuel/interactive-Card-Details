@@ -16,7 +16,7 @@ function createError(input, msg) {
 
   // create Error for the month, year, and cvv input
   if (input === monthInput || input === yearInput || input === cvcInput) {
-    const formCatch = input.parentElement.parentElement;
+    const formCatch = input.lastChild;
     const small = formCatch.querySelector('small');
 
     small.innerText = msg;
@@ -62,7 +62,7 @@ function validate() {
 // Remove Error
 function removeError() {
   const formError = document.querySelectorAll('.error');
-  console.log(formError);
+  // console.log(formError);
   formError.forEach((error) => {
     error.classList.remove('error');
   });
