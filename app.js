@@ -14,7 +14,12 @@ function createError(input, msg) {
 
   formCatch.className = 'form__card-input error';
 
-  // create Error for the month, year, and cvv input
+  // Create Month, Year, and Cvc Error
+  const formCatch1 = input.parentElement.lastChild;
+
+  small.innerText = msg;
+
+  formCatch1.className = 'form__card-input error';
 }
 
 // Validation
