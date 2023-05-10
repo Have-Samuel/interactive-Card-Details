@@ -132,15 +132,10 @@ p {
 }
 
 .date-field {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  /* width: 100%; */
-  /* margin: 0 auto; */
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px; */
+  gap: 8px;
 }
 
 .month select {
@@ -162,15 +157,7 @@ p {
   cursor: pointer;
 }
 
-/* .c-v-c {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-} */
-
 .number {
-  /* width: 4ch; */
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -201,6 +188,7 @@ form button {
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
+  outline: none;
 }
 
 .complete a {
