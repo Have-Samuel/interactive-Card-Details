@@ -104,9 +104,8 @@ input[type="text"] {
 .month,
 .year,
 select {
+  /* width: 100%; */
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
   outline: none;
   border: 1px solid #ccc;
@@ -149,8 +148,8 @@ p {
 }
 
 .cvc {
-  width: 50%;
-  padding: 12px 20px;
+  width: 100%;
+  padding: 14px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -178,10 +177,6 @@ p {
   margin-bottom: 0.5rem;
   appearance: none;
 }
-
-/* .number {
-  width: 4ch;
-} */
 
 form button {
   display: flex;
