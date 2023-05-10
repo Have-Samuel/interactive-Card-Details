@@ -6,22 +6,20 @@ const yearInput = document.querySelector('#year-js');
 const cvcInput = document.querySelector('#cvc-js');
 
 // create Error
-function createError(input, msg) {
-  const formCatch = input.parentElement;
-  const small = formCatch.querySelector('small');
+function createError(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.classList.add('error');
+  // Looping throw all the elements with small element
 
-  small.innerText = msg;
-
-  formCatch.className = 'form__card-input error';
-
-  // Create Month, Year, and Cvc Error
-  const formCatch1 = input.parentElement.lastChild;
-
-  small.innerText = msg;
-
-  formCatch1.className = 'form__card-input error';
+  if (small) {
+    small.innerText = message;
+  } else {
+    const small = document.createElement('small');
+    small.innerText = message;
+    formControl.appendChild(small);
+  }
 }
-
 // Validation
 function validate() {
   const nameValue = nameInput.value.trim();
