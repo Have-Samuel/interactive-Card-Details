@@ -28,8 +28,9 @@
       </label>
         <p>EXE.  DATE (MM/YY) CVC</p>
         <div class="date-field">
-          <div class="month" id="month-js">
-            <select name="Month" >
+          
+          <div class="month form__card-input">
+            <select name="Month"  id="month-js">
               <option value="month">MM</option>
               <option value="january">January</option>
               <option value="february">February</option>
@@ -45,7 +46,7 @@
               <option value="december">December</option>
             </select>
           </div>
-          <div class="year">
+          <div class="year form__card-input">
             <select name="Year" id="year-js">
               <option value="">YY</option>
               <option value="2020">2020</option>
@@ -60,9 +61,10 @@
               <option value="2016">2029</option>
               <option value="2017">2030</option>
             </select>
-          </div class="form__card-input c-v-c">
-              <input class="cvc" type="number" placeholder="e.g.123">
+          </div class="form__card-input">
+              <input class="cvc" id="cvc-js" type="number" placeholder="e.g.123">
         </div>
+        <small>Error</small>
       </div>
         <button type="submit" class="btn">Confirm</button>
     </form>
