@@ -17,14 +17,18 @@
     <div class="img-3"></div>
     <div class="img-4"></div>
     </div>
-    <form class="credit-card">
-      <label for="name">CARDHOLDER NAME</label>
-      <input type="text" name="name" id="name" placeholder="e.g. Have Peace">
-      <label for="card-number">CARD NUMBER</label>
-        <input type="number" class="card-number" placeholder="e.g. 1234 5678 9123 000">
+    <form class="credit-card" id="form-js">
+      <label class="form__card-input" for="name">CARDHOLDER NAME
+        <input type="text" name="name" id="name" placeholder="e.g. Have Peace">
+        <small>Error</small>
+      </label>      
+      <label class="form__card-input" for="card-number">CARD NUMBER
+        <input type="number" class="number" id="card-number" placeholder="e.g. 1234 5678 9123 000">
+        <small>Error</small>
+      </label>
         <p>EXE.  DATE (MM/YY) CVC</p>
         <div class="date-field">
-          <div class="month">
+          <div class="month" id="month-js">
             <select name="Month" >
               <option value="month">MM</option>
               <option value="january">January</option>
@@ -42,7 +46,7 @@
             </select>
           </div>
           <div class="year">
-            <select name="Year">
+            <select name="Year" id="year-js">
               <option value="">YY</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
@@ -56,10 +60,11 @@
               <option value="2016">2029</option>
               <option value="2017">2030</option>
             </select>
-          </div>
+          </div class="form__card-input c-v-c">
               <input class="cvc" type="number" placeholder="e.g.123">
         </div>
-        <button type="submit" class="proceed-btn"><a href="#">Confirm</a></button>
+      </div>
+        <button type="submit" class="btn"><a href="#">Confirm</a></button>
     </form>
     <div class="complete">
       <div class="img-5"></div>
