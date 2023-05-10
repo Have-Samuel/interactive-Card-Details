@@ -132,10 +132,15 @@ p {
 }
 
 .date-field {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  /* display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 8px; */
 }
 
 .month select {
