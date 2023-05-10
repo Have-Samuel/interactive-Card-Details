@@ -17,6 +17,7 @@ function createError(input, message) {
   } else {
     const small = document.createElement('small');
     small.innerText = message;
+    small.classList.add('error');
     formControl.appendChild(small);
   }
 }

@@ -74,6 +74,16 @@ form {
   border-color: red;
 }
 
+.style-message {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  margin-top: 0.5rem;
+}
+
 .form__card-input small {
   visibility: hidden;
   color: #f74747;
