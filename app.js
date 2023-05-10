@@ -37,9 +37,19 @@ function validate() {
   }
 }
 
+// Remove Error
+function removeError() {
+  const formError = document.querySelectorAll('.error');
+
+  formError.forEach((error) => {
+    error.classList.remove('error');
+  });
+}
+
 // Form submit
 form.addEventListener('submit', (eve) => {
   console.log('Hello!');
   eve.preventDefault();
+  removeError();
   validate();
 });

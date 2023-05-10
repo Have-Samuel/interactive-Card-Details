@@ -166,6 +166,7 @@ p {
 } */
 
 .number {
+  /* width: 4ch; */
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -175,7 +176,12 @@ p {
   outline: none;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  appearance: none;
 }
+
+/* .number {
+  width: 4ch;
+} */
 
 form button {
   display: flex;
