@@ -2,8 +2,25 @@ const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
 const numInput = document.querySelector('#card-number');
 const monthInput = document.querySelector('#month-js');
-const yearInput = document.querySelector('#year-js');
+const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
+
+// Setting Date
+const currentYear = new Date().getFullYear();
+for (let i = currentYear; i < currentYear + 10; i += 1) {
+  const option = document.createElement('option');
+  option.value = i;
+  option.innerText = i;
+  yearInput.appendChild(option);
+}
+
+// Setting Month
+for (let i = 1; i <= 12; i += 1) {
+  const option = document.createElement('option');
+  option.value = i;
+  option.innerText = i;
+  monthInput.appendChild(option);
+}
 
 // create Error
 function createError(input, message) {
@@ -17,9 +34,10 @@ function createError(input, message) {
   } else {
     const small = document.createElement('small');
     small.innerText = message;
-    small.classList.add('error');
     formControl.appendChild(small);
   }
+
+  // console.log(formControl);
 }
 // Validation
 function validate() {
