@@ -70,14 +70,6 @@ form {
   width: 327px;
 }
 
-.form__card-input {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  flex-direction: column;
-  /* margin-bottom: 1rem; */
-}
-
 .form__card-input.error input {
   border-color: red;
 }
@@ -140,6 +132,7 @@ p {
 }
 
 .date-field {
+  margin-top: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +140,6 @@ p {
 }
 
 .month select {
-  width: 100%;
   padding: 10px 20px;
 }
 
@@ -158,7 +150,7 @@ p {
 .cvc {
   width: 100%;
   padding: 14px 20px;
-  /* margin-top: 0.3rem; */
+  margin-top: 0.3rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
