@@ -41,7 +41,6 @@ function createError(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector('small');
   formControl.classList.add('error');
-  // Looping throw all the elements with small element
 
   if (small) {
     small.innerText = message;
@@ -56,7 +55,6 @@ function createError(input, message) {
 function validate() {
   const nameValue = nameInput.value.trim();
   const numValue = numInput.value.trim();
-  const monthValue = monthInput.value.trim();
   const yearValue = yearInput.value.trim();
   const cvcValue = cvcInput.value.trim();
 
@@ -75,9 +73,6 @@ function validate() {
     createError(numInput, 'Wrong format, numbers only');
   }
 
-  if (!monthValue) {
-    createError(monthInput, 'Month cannot be blank');
-  }
   if (!yearValue) {
     createError(yearInput, 'Year cannot be blank');
   }
@@ -86,23 +81,19 @@ function validate() {
   }
 }
 
-// Remove Error
 function removeError() {
   const formError = document.querySelectorAll('.error');
-  // console.log(formError);
+
   formError.forEach((error) => {
     error.classList.remove('error');
   });
 }
 
-// Reset form
 function resetForm() {
   form.reset();
 }
 
-// Form submit
 form.addEventListener('submit', (eve) => {
-  console.log('Hello!');
   eve.preventDefault();
   removeError();
   validate();
