@@ -15,12 +15,26 @@ for (let i = currentYear; i < currentYear + 10; i += 1) {
 }
 
 // Setting Month
-for (let i = 1; i <= 12; i += 1) {
+for (let i = 1; i < 12; i += 1) {
   const option = document.createElement('option');
   option.value = i;
   option.innerText = i;
   monthInput.appendChild(option);
 }
+
+// Setting CVC
+cvcInput.addEventListener('input', (eve) => {
+  const { value } = eve.target;
+  eve.target.value = value.replace(/\D/g, '');
+
+  if (value.length > 3) {
+    eve.target.value = value.slice(0, 3);
+  } else if (value.length < 3) {
+    eve.target.value = value.slice(0, 3);
+  } else {
+    eve.target.value = value;
+  }
+});
 
 // create Error
 function createError(input, message) {
@@ -36,9 +50,8 @@ function createError(input, message) {
     small.innerText = message;
     formControl.appendChild(small);
   }
-
-  // console.log(formControl);
 }
+
 // Validation
 function validate() {
   const nameValue = nameInput.value.trim();
