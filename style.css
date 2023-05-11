@@ -14,7 +14,7 @@ body {
 
 aside {
   width: 375px;
-  height: 724px;
+  height: 714px;
   margin: 5rem auto;
   background-color: #fff;
   position: relative;
@@ -95,7 +95,7 @@ input[type="text"] {
   margin: 12px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
   margin-bottom: 0.5rem;
@@ -104,9 +104,8 @@ input[type="text"] {
 .month,
 .year,
 select {
+  /* width: 100%; */
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
   outline: none;
   border: 1px solid #ccc;
@@ -133,14 +132,14 @@ p {
 }
 
 .date-field {
+  margin-top: 0.4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 }
 
 .month select {
-  width: 100%;
   padding: 10px 20px;
 }
 
@@ -149,24 +148,16 @@ p {
 }
 
 .cvc {
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 0.3rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
   cursor: pointer;
 }
 
-/* .c-v-c {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-} */
-
 .number {
-  /* width: 4ch; */
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -179,10 +170,6 @@ p {
   appearance: none;
 }
 
-/* .number {
-  width: 4ch;
-} */
-
 form button {
   display: flex;
   justify-content: center;
@@ -194,16 +181,13 @@ form button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
   box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
-}
-
-form button a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
+  outline: none;
 }
 
 .complete a {
@@ -227,10 +211,6 @@ form button:hover,
 form button:focus {
   background-color: #fff;
   border: 1px solid #21092f;
-}
-
-form button:hover a,
-form button:focus a {
   color: #21092f;
 }
 
