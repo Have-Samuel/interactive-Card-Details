@@ -93,6 +93,11 @@ function resetForm() {
   form.reset();
 }
 
+// form completion
+$('button').on('click', () => {
+  $('.complete').addClass('active');
+});
+
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
   removeError();
