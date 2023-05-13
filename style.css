@@ -50,22 +50,6 @@ aside {
   box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 80px;
 }
 
-.btn {
-  background-color: #f74747;
-  color: rgb(22, 21, 22);
-  padding: 12px 20px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 15px;
-  text-decoration: none;
-  margin-top: 1rem;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .img-4 {
   height: 30px;
   width: 54px;
