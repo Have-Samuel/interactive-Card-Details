@@ -157,6 +157,22 @@ p {
   cursor: pointer;
 }
 
+.btn {
+  width: 50%;
+  padding: 12px 20px;
+  background-color: #8c4ab3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+  color: #0c0707;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  outline: none;
+}
+
 .number {
   width: 100%;
   padding: 12px 20px;

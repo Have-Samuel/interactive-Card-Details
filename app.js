@@ -90,7 +90,20 @@ function resetForm() {
 }
 
 // USE OF JQUERY SYNTAX
-$('button').addClass('button');
+// $('button').addClass('button');\
+// CHAINING
+$('button').addClass('btn')
+  .css('background-color', 'green')
+  .css('color', 'white')
+  .css('border-radius', '5px')
+  .css('border', 'none')
+  .css('padding', '10px 20px')
+  .css('cursor', 'pointer')
+  .css('margin-top', '20px')
+  .css('font-size', '16px')
+  .css('font-weight', 'bold')
+  .css('letter-spacing', '1px')
+  .css('transition', 'all 0.3s ease-in-out');
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
