@@ -93,6 +93,7 @@ function resetForm() {
   form.reset();
 }
 
+// USE OF JQUERY SYNTAX
 // form completion
 $('button').on('click', () => {
   $('.complete').addClass('active');
