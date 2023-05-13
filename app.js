@@ -56,7 +56,6 @@ function createError(input, message) {
 function validate() {
   const nameValue = nameInput.value.trim();
   const numValue = numInput.value.trim();
-  const yearValue = yearInput.value.trim();
   const cvcValue = cvcInput.value.trim();
 
   // Regex For card number
@@ -72,10 +71,6 @@ function validate() {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
     createError(numInput, 'Wrong format, numbers only');
-  }
-
-  if (!yearValue) {
-    createError(yearInput, 'Year cannot be blank');
   }
   if (!cvcValue) {
     createError(cvcInput, 'CVC cannot be blank');
