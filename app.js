@@ -90,9 +90,7 @@ function resetForm() {
 }
 
 // USE OF JQUERY SYNTAX
-$('button').on('click', () => {
-  $('.complete').addClass('active');
-});
+$('button').addClass('button');
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
