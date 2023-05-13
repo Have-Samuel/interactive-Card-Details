@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
 const numInput = document.querySelector('#card-number');
