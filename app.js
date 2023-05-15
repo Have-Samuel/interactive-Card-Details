@@ -85,14 +85,14 @@ function removeError() {
   });
 }
 
-const image2 = document.querySelector('.img-2');
-image2.createElement('div');
-image2.textContent = 'Hello!';
-image2.classList.add('newDiv');
-
 function resetForm() {
   form.reset();
 }
+
+// Using Jquery
+$('.img-2').append('<div class="newCvc">Hello!</div>');
+$('.img-3').append('<div class="newNum">1111 2222 3333 4444</div>');
+$('.img-3').append('<div class="namAndDate"><p class="cardName">Joe Doe</p><date class="cardDate">02/20</date></div>');
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
