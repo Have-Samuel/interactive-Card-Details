@@ -160,13 +160,13 @@ p {
 .newCvc {
   border-radius: 8px;
   z-index: 1;
-  color: #f50f08;
+  color: #fff;
   text-align: end;
   margin: 4.1rem 1.8rem 0 0;
 }
 
 .newNum {
-  color: #f50f08;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,25 +174,32 @@ p {
   margin: 5rem auto 0 auto;
 }
 
-.newName {
-  color: #f50f08;
+.cardName {
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  /* margin-left: 1rem; */
+  /* margin-top: 1rem; */
 }
 
-.newDate {
-  color: #f50f08;
+.cardDate {
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: end;
-  margin-right: 1rem;
-  padding-bottom: -5rem;
-  /* margin: 1rem auto 0 auto; */
+  /* margin-right: 1rem; */
+}
+
+.namAndDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: 237px;
 }
 
 .number {
