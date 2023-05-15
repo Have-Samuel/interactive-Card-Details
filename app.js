@@ -75,6 +75,12 @@ function validate() {
   if (!cvcValue) {
     createError(cvcInput, 'CVC cannot be blank');
   }
+
+  // When Everything in the form is correct, confirm and display the popup
+  $('.btn').on('click', function () {
+    console.log(this);
+    $(this).css('display', 'block');
+  });
 }
 
 function removeError() {
