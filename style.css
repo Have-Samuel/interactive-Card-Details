@@ -168,15 +168,31 @@ p {
 .newNum {
   color: #f50f08;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
 }
 
 .newName {
   color: #f50f08;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.newDate {
+  color: #f50f08;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-right: 1rem;
+  padding-bottom: -5rem;
+  /* margin: 1rem auto 0 auto; */
 }
 
 .number {

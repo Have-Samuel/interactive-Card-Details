@@ -93,8 +93,8 @@ function resetForm() {
 $('.img-2').append('<div class="newCvc">Hello!</div>');
 $('.img-3').append(
   '<div class="newNum">1111 2222 3333 4444</div>',
-  '<div class="newName">John Doe</div>',
-  '<div class="newDate">12/24</div>',
+  '<p class="newName">John Doe</p>',
+  '<data class="newDate">12/24</date>',
 );
 
 form.addEventListener('submit', (eve) => {
