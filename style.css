@@ -157,16 +157,27 @@ p {
   cursor: pointer;
 }
 
-.newDiv {
-  border: 4px solid #f50f08;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.newCvc {
   border-radius: 8px;
   z-index: 1;
   color: #f50f08;
+  text-align: end;
+  margin: 4.1rem 1.8rem 0 0;
+}
+
+.newNum {
+  color: #f50f08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.newName {
+  color: #f50f08;
+  
 }
 
 .number {
