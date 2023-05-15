@@ -90,7 +90,6 @@ image2.createElement('div');
 image2.textContent = 'Hello!';
 image2.classList.add('newDiv');
 
-
 function resetForm() {
   form.reset();
 }
