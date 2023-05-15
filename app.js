@@ -1,3 +1,5 @@
+const { createContext } = require("react");
+
 /* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
@@ -104,6 +106,23 @@ function resetForm() {
 //   .css('font-weight', 'bold')
 //   .css('letter-spacing', '1px')
 //   .css('transition', 'all 0.3s ease-in-out');
+
+// Selecting Img-2, and adding a new div
+const newDiv = createContext('div');
+newDiv.classList.add('newDiv');
+newDiv.innerText = 'This this is CVC';
+
+$('newDiv').createElement('div');
+$('newDiv').html('This this is CVC');
+$('newDiv').text('This this is CVC');
+$('newDiv').css('color', 'red');
+$('newDiv').css('font-size', '20px');
+$('newDiv').css('font-weight', 'bold');
+$('newDiv').css('letter-spacing', '1px');
+$('newDiv').css('margin-top', '20px');
+$('newDiv').css('transition', 'all 0.3s ease-in-out');
+$('newDiv').css('border', '5px solid red');
+$('img-2').appendChild('newDiv');
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
