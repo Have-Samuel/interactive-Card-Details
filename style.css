@@ -180,8 +180,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  /* margin-left: 1rem; */
-  /* margin-top: 1rem; */
 }
 
 .cardDate {
@@ -190,7 +188,6 @@ p {
   flex-direction: column;
   justify-content: end;
   align-items: end;
-  /* margin-right: 1rem; */
 }
 
 .namAndDate {
