@@ -188,6 +188,7 @@ p {
   flex-direction: column;
   justify-content: end;
   align-items: end;
+  font-size: 12px;
 }
 
 .namAndDate {
@@ -399,4 +400,51 @@ form button:focus {
     background-color: #fff;
     color: #21092f;
   }
+
+  .newCvc {
+    border-radius: 8px;
+    z-index: 1;
+    color: #fff;
+    text-align: end;
+    margin: 7rem 3rem 0 0;
+  }
+
+  .newNum {
+    color: #fff;
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto 0 auto;
+  }
+
+  .namAndDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 340px;
+  }
+
+  .cardName {
+    color: #fff;
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .cardDate {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    font-size: 12px;
+  }
+
+  
 }
