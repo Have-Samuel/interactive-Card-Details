@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
 const numInput = document.querySelector('#card-number');
@@ -55,7 +56,6 @@ function createError(input, message) {
 function validate() {
   const nameValue = nameInput.value.trim();
   const numValue = numInput.value.trim();
-  const yearValue = yearInput.value.trim();
   const cvcValue = cvcInput.value.trim();
 
   // Regex For card number
@@ -72,10 +72,6 @@ function validate() {
   } else if (!isCardNumber(numValue)) {
     createError(numInput, 'Wrong format, numbers only');
   }
-
-  if (!yearValue) {
-    createError(yearInput, 'Year cannot be blank');
-  }
   if (!cvcValue) {
     createError(cvcInput, 'CVC cannot be blank');
   }
@@ -89,14 +85,14 @@ function removeError() {
   });
 }
 
+const image2 = document.querySelector('.img-2');
+image2.createElement('div');
+image2.textContent = 'Hello!';
+image2.classList.add('newDiv');
+
 function resetForm() {
   form.reset();
 }
-
-// USE OF JQUERY SYNTAX
-$('button').on('click', () => {
-  $('.complete').addClass('active');
-});
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
