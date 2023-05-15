@@ -91,8 +91,11 @@ function resetForm() {
 
 // Using Jquery
 $('.img-2').append('<div class="newCvc">Hello!</div>');
-$('.img-3').append('<div class="newNum">1111 2222 3333 4444</div>');
-$('.img-3').append('<div class="newName">John Doe</div>');
+$('.img-3').append(
+  '<div class="newNum">1111 2222 3333 4444</div>',
+  '<div class="newName">John Doe</div>',
+  '<div class="newDate">12/24</div>',
+);
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
