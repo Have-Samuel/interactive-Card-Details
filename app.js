@@ -123,7 +123,13 @@ $('.img-2').on('click', function () {
 });
 
 $('.img-3').on('click', function () {
-  $(this).fadeOut(3000, function () {
+  // $(this).fadeOut(3000, function () {
+  //   $(this).remove();
+  // });
+  $(this).animate({
+    opacity: 0,
+    width: '50px',
+  }, 3000, function () {
     $(this).remove();
   });
 });
