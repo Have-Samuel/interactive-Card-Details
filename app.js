@@ -83,17 +83,17 @@ function validate() {
 }
 
 // Mouse Click
-$('.img-1').click(function () {
-  alert('HELLO!');
-});
+// $('.img-1').click(function () {
+//   alert('HELLO!');
+// });
 
-$('.img-2').click(function () {
-  alert('HELLO!');
-});
+// $('.img-2').click(function () {
+//   alert('HELLO!');
+// });
 
-$('.img-3').click(function () {
-  alert('HELLO!');
-});
+// $('.img-3').click(function () {
+//   alert('HELLO!');
+// });
 
 // Mouse Leave
 $('input').on('mouseleave', function () {
@@ -103,6 +103,14 @@ $('input').on('mouseleave', function () {
 // Mouse Click
 $('input').on('click', function () {
   $(this).css('border', '1px solid magenta');
+});
+
+$('form').on('focus', 'input', function () {
+  $(this).val('ALOKALOAKA');
+});
+
+$('.all-images').on('focus', function () {
+  $(this).val('ALOKALOAKA');
 });
 
 function removeError() {
