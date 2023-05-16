@@ -82,6 +82,16 @@ function validate() {
   });
 }
 
+// Mouse Click
+$('img').click(function () {
+  alert('HELLO!');
+});
+
+// Mouse Leave
+$('input').on('mouseleave', function () {
+  console.log('Mouse Leave!!');
+});
+
 function removeError() {
   const formError = document.querySelectorAll('.error');
 
