@@ -83,13 +83,26 @@ function validate() {
 }
 
 // Mouse Click
-$('img').click(function () {
+$('.img-1').click(function () {
+  alert('HELLO!');
+});
+
+$('.img-2').click(function () {
+  alert('HELLO!');
+});
+
+$('.img-3').click(function () {
   alert('HELLO!');
 });
 
 // Mouse Leave
 $('input').on('mouseleave', function () {
   console.log('Mouse Leave!!');
+});
+
+// Mouse Click
+$('input').on('click', function () {
+  $(this).css('border', '1px solid magenta');
 });
 
 function removeError() {
