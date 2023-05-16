@@ -96,7 +96,7 @@ function validate() {
 // });
 
 // Mouse Leave
-$('input').on('mouseleave', function () {
+$('input').on('mouseleave', () => {
   console.log('Mouse Leave!!');
 });
 
@@ -111,6 +111,21 @@ $('form').on('focus', 'input', function () {
 
 $('.all-images').on('focus', function () {
   $(this).val('ALOKALOAKA');
+});
+
+// FadeOut
+$('.img-1').on('click', function () {
+  $(this).fadeOut();
+});
+
+$('.img-2').on('click', function () {
+  $(this).fadeOut();
+});
+
+$('.img-3').on('click', function () {
+  $(this).fadeOut(3000, function () {
+    $(this).remove();
+  });
 });
 
 function removeError() {
