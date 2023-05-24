@@ -35,6 +35,21 @@ cvcInput.addEventListener('input', (eve) => {
   } else {
     eve.target.value = value;
   }
+
+  // connecting the cvcInput to the card
+  $('#cvc-js').on('input', function () {
+    $('.newCvc').text($(this).val());
+
+    if ($(this).val().length > 3) {
+      $('.newCvc').text($(this).val().slice(0, 3));
+    } else if ($(this).val().length < 3) {
+      $('.newCvc').text($(this).val().slice(0, 3));
+    } else {
+      $('.newCvc').text($(this).val());
+    } if ($(this).val() === '') {
+      $('.newCvc').text('CVC');
+    }
+  });
 });
 
 // create Error
@@ -114,25 +129,25 @@ $('.all-images').on('focus', function () {
 });
 
 // FadeOut
-$('.img-1').on('click', function () {
-  $(this).fadeOut();
-});
+// $('.img-1').on('click', function () {
+//   $(this).fadeOut();
+// });
 
-$('.img-2').on('click', function () {
-  $(this).fadeOut();
-});
+// $('.img-2').on('click', function () {
+//   $(this).fadeOut();
+// });
 
-$('.img-3').on('click', function () {
-  // $(this).fadeOut(3000, function () {
-  //   $(this).remove();
-  // });
-  $(this).animate({
-    opacity: 0,
-    width: '50px',
-  }, 3000, function () {
-    $(this).remove();
-  });
-});
+// $('.img-3').on('click', function () {
+//   // $(this).fadeOut(3000, function () {
+//   //   $(this).remove();
+//   // });
+//   $(this).animate({
+//     opacity: 0,
+//     width: '50px',
+//   }, 3000, function () {
+//     $(this).remove();
+//   });
+// });
 
 function removeError() {
   const formError = document.querySelectorAll('.error');
@@ -150,6 +165,9 @@ function resetForm() {
 $('.img-2').append('<div class="newCvc">Hello!</div>');
 $('.img-3').append('<div class="newNum">1111 2222 3333 4444</div>');
 $('.img-3').append('<div class="namAndDate"><p class="cardName">Joe Doe</p><date class="cardDate">02/20</date></div>');
+
+// Displaying text on the card when typing in the input field
+
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
