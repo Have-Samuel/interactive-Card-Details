@@ -50,16 +50,11 @@ cvcInput.addEventListener('input', (eve) => {
   $('#cvc-js').on('input', function () {
     $('.newCvc').text($(this).val());
 
-    if ($(this).val().length > 3) {
+    if ($(this).val().length > 5) {
       $('.newCvc').text($(this).val().slice(0, 3));
-    } else if ($(this).val().length < 3) {
-      $('.newCvc').text($(this).val().slice(0, 3));
-    } else {
-      $('.newCvc').text($(this).val());
+    } else if ($(this).val().length < 5) {
+      $('.newCvc').text($(this).val().slice(0, 2));
     }
-    // if ($(this).val() === '') {
-    //   $('.newCvc').text('CVC');
-    // }
   });
 });
 
