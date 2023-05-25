@@ -15,9 +15,13 @@ for (let i = currentYear; i < currentYear + 10; i += 1) {
   option.innerText = i;
   yearInput.appendChild(option);
 
-  // connecting the yearInput to the card
-  $('#year-js').on('input', function () {
-    $('.cardDate').text($(this).val());
+  // connecting the monthInput and yearInput to the card
+  $('#month-js').on('input', () => {
+    $('.cardDate').text(`${monthInput.value}/${yearInput.value}`);
+  });
+
+  $('#year-js').on('input', () => {
+    $('.cardDate').text(`${monthInput.value}/${yearInput.value}`);
   });
 }
 
