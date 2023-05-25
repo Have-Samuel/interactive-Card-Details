@@ -7,6 +7,8 @@ const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
 
+// Se
+
 // Setting Date
 const currentYear = new Date().getFullYear();
 for (let i = currentYear; i < currentYear + 10; i += 1) {
@@ -16,11 +18,7 @@ for (let i = currentYear; i < currentYear + 10; i += 1) {
   yearInput.appendChild(option);
 
   // connecting the monthInput and yearInput to the card
-  $('#month-js').on('input', () => {
-    $('.cardDate').text(`${monthInput.value}/${yearInput.value}`);
-  });
-
-  $('#year-js').on('input', () => {
+  $('#month-js, #year-js').on('input', () => {
     $('.cardDate').text(`${monthInput.value}/${yearInput.value}`);
   });
 }
@@ -49,12 +47,6 @@ cvcInput.addEventListener('input', (eve) => {
   // connecting the cvcInput to the card
   $('#cvc-js').on('input', function () {
     $('.newCvc').text($(this).val());
-
-    if ($(this).val().length > 5) {
-      $('.newCvc').text($(this).val().slice(0, 3));
-    } else if ($(this).val().length < 5) {
-      $('.newCvc').text($(this).val().slice(0, 2));
-    }
   });
 });
 
@@ -95,6 +87,8 @@ function validate() {
   }
   if (!cvcValue) {
     createError(cvcInput, 'CVC cannot be blank');
+  } else if (cvcValue.length < 3) {
+    createError(cvcInput, '3 characters atleast');
   }
 
   // When Everything in the form is correct, confirm and display the popup
