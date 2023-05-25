@@ -16,8 +16,7 @@ $('#name').on('input', function () {
 $('#card-number').on('input', function () {
   $('.newNum').text($(this).val());
 
-  // Adding spaces after four charaters
-  
+  // Add space withi the characters
 });
 
 // Connecting the cardInput to the card
