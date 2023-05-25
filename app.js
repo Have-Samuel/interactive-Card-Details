@@ -14,6 +14,48 @@ for (let i = currentYear; i < currentYear + 10; i += 1) {
   option.value = i;
   option.innerText = i;
   yearInput.appendChild(option);
+
+  // connecting the yearInput to the card
+  $('#year-js').on('input', function () {
+    $('.cardDate').text($(this).val());
+
+    if ($(this).val().length > 2) {
+      $('.cardDate').text($(this).val().slice(0, 2));
+    } else if ($(this).val().length < 2) {
+      $('.cardDate').text($(this).val().slice(0, 2));
+    } else {
+      $('.cardDate').text($(this).val());
+    } if ($(this).val() === '') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '0') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '1') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '2') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '3') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '4') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '5') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '6') {
+      $('.cardDate').text('02/20');
+    } else
+    if ($(this).val() === '7') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '8') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '9') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '10') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '11') {
+      $('.cardDate').text('02/20');
+    } else if ($(this).val() === '12') {
+      $('.cardDate').text('02/20');
+    }
+  });
 }
 
 // Setting Month
