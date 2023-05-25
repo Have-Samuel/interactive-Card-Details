@@ -46,7 +46,8 @@ cvcInput.addEventListener('input', (eve) => {
       $('.newCvc').text($(this).val().slice(0, 3));
     } else {
       $('.newCvc').text($(this).val());
-    } if ($(this).val() === '') {
+    }
+    if ($(this).val() === '') {
       $('.newCvc').text('CVC');
     }
   });
@@ -162,12 +163,11 @@ function resetForm() {
 }
 
 // Using Jquery
-$('.img-2').append('<div class="newCvc">Hello!</div>');
-$('.img-3').append('<div class="newNum">1111 2222 3333 4444</div>');
-$('.img-3').append('<div class="namAndDate"><p class="cardName">Joe Doe</p><date class="cardDate">02/20</date></div>');
+$('.img-2').append('<div class="newCvc">000</div>');
+$('.img-3').append('<div class="newNum">0000 0000 0000 0000</div>');
+$('.img-3').append('<div class="namAndDate"><p class="cardName">Jone Carter</p><date class="cardDate">02/20</date></div>');
 
 // Displaying text on the card when typing in the input field
-
 
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();

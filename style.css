@@ -158,11 +158,14 @@ p {
 }
 
 .newCvc {
-  border-radius: 8px;
   z-index: 1;
   color: #fff;
   text-align: end;
-  margin: 4.1rem 1.8rem 0 0;
+  margin: 4.5rem 2rem 0 0;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 1.3px;
 }
 
 .newNum {
