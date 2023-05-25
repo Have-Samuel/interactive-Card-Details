@@ -1,3 +1,4 @@
+/* eslint-disable no-loop-func */
 /* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
@@ -47,9 +48,9 @@ cvcInput.addEventListener('input', (eve) => {
     } else {
       $('.newCvc').text($(this).val());
     }
-    if ($(this).val() === '') {
-      $('.newCvc').text('CVC');
-    }
+    // if ($(this).val() === '') {
+    //   $('.newCvc').text('CVC');
+    // }
   });
 });
 
