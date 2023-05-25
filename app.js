@@ -7,7 +7,10 @@ const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
 
-// Se
+// Connecting the nameInput to the card
+$('#name').on('input', function () {
+  $('.cardName').text($(this).val());
+});
 
 // Setting Date
 const currentYear = new Date().getFullYear();
@@ -111,22 +114,22 @@ function validate() {
 // });
 
 // Mouse Leave
-$('input').on('mouseleave', () => {
-  console.log('Mouse Leave!!');
-});
+// $('input').on('mouseleave', () => {
+//   console.log('Mouse Leave!!');
+// });
 
-// Mouse Click
-$('input').on('click', function () {
-  $(this).css('border', '1px solid magenta');
-});
+// // Mouse Click
+// $('input').on('click', function () {
+//   $(this).css('border', '1px solid magenta');
+// });
 
-$('form').on('focus', 'input', function () {
-  $(this).val('ALOKALOAKA');
-});
+// $('form').on('focus', 'input', function () {
+//   $(this).val('ALOKALOAKA');
+// });
 
-$('.all-images').on('focus', function () {
-  $(this).val('ALOKALOAKA');
-});
+// $('.all-images').on('focus', function () {
+//   $(this).val('ALOKALOAKA');
+// });
 
 // FadeOut
 // $('.img-1').on('click', function () {
