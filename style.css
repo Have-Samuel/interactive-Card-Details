@@ -194,16 +194,18 @@ p {
 }
 
 .cardDate {
-  color: #fff;
-  display: flex;
+  /* color: #fff; */
+  /* display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: end;
+  align-items: end; */
   font-size: 12px;
   font-size: 9px;
   font-weight: 500;
   line-height: 11px;
   letter-spacing: 1.3px;
+  margin: 0 2rem 0 0;
+  padding-bottom: 3rem;
 }
 
 .namAndDate {
