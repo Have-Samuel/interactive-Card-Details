@@ -17,11 +17,6 @@ $('#card-number').on('input', function () {
   $('.newNum').text($(this).val());
 });
 
-// Connecting the cardInput to the card
-$('#card-number').on('input', function () {
-  $('.newNum').text($(this).val());
-});
-
 // Setting Date
 const currentYear = new Date().getFullYear();
 for (let i = currentYear; i < currentYear + 10; i += 1) {
@@ -106,10 +101,6 @@ function validate() {
   }
 }
 
-// Show popup when fields have no errors
-
-
-
 function removeError() {
   const formError = document.querySelectorAll('.error');
 
@@ -136,3 +127,7 @@ form.addEventListener('submit', (eve) => {
   validate();
   resetForm();
 });
+
+const thankYou = () => {
+  
+}
