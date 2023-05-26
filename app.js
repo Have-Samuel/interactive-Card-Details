@@ -104,12 +104,11 @@ function validate() {
   } else if (cvcValue.length < 3) {
     createError(cvcInput, '3 characters atleast');
   }
-
-  // When Everything in the form is correct, confirm and display the popup
-  $('.btn').on('click', function () {
-    $(this).css('display', 'block');
-  });
 }
+
+// Show popup when fields have no errors
+
+
 
 function removeError() {
   const formError = document.querySelectorAll('.error');
