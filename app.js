@@ -7,7 +7,20 @@ const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
 
-// Se
+// Connecting the nameInput to the card
+$('#name').on('input', function () {
+  $('.cardName').text($(this).val());
+});
+
+// Connecting the numberInput to the card
+$('#card-number').on('input', function () {
+  $('.newNum').text($(this).val());
+});
+
+// Connecting the cardInput to the card
+$('#card-number').on('input', function () {
+  $('.newNum').text($(this).val());
+});
 
 // Setting Date
 const currentYear = new Date().getFullYear();
@@ -76,15 +89,16 @@ function validate() {
     return /^\d{16}$/.test(numValue);
   }
 
-  if (!nameValue) {
-    createError(nameInput, 'Name cannot be blank');
-  }
-
   if (!numValue) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
     createError(numInput, 'Wrong format, numbers only');
   }
+
+  if (!nameValue) {
+    createError(nameInput, 'Name cannot be blank');
+  }
+
   if (!cvcValue) {
     createError(cvcInput, 'CVC cannot be blank');
   } else if (cvcValue.length < 3) {
@@ -96,58 +110,6 @@ function validate() {
     $(this).css('display', 'block');
   });
 }
-
-// Mouse Click
-// $('.img-1').click(function () {
-//   alert('HELLO!');
-// });
-
-// $('.img-2').click(function () {
-//   alert('HELLO!');
-// });
-
-// $('.img-3').click(function () {
-//   alert('HELLO!');
-// });
-
-// Mouse Leave
-$('input').on('mouseleave', () => {
-  console.log('Mouse Leave!!');
-});
-
-// Mouse Click
-$('input').on('click', function () {
-  $(this).css('border', '1px solid magenta');
-});
-
-$('form').on('focus', 'input', function () {
-  $(this).val('ALOKALOAKA');
-});
-
-$('.all-images').on('focus', function () {
-  $(this).val('ALOKALOAKA');
-});
-
-// FadeOut
-// $('.img-1').on('click', function () {
-//   $(this).fadeOut();
-// });
-
-// $('.img-2').on('click', function () {
-//   $(this).fadeOut();
-// });
-
-// $('.img-3').on('click', function () {
-//   // $(this).fadeOut(3000, function () {
-//   //   $(this).remove();
-//   // });
-//   $(this).animate({
-//     opacity: 0,
-//     width: '50px',
-//   }, 3000, function () {
-//     $(this).remove();
-//   });
-// });
 
 function removeError() {
   const formError = document.querySelectorAll('.error');
