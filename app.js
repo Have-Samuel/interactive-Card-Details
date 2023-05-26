@@ -15,8 +15,6 @@ $('#name').on('input', function () {
 // Connecting the numberInput to the card
 $('#card-number').on('input', function () {
   $('.newNum').text($(this).val());
-
-  // Add space withi the characters
 });
 
 // Connecting the cardInput to the card
@@ -99,9 +97,8 @@ function validate() {
 
   if (!nameValue) {
     createError(nameInput, 'Name cannot be blank');
-  } else if (nameValue.length > 16) {
-    createError(nameInput, '16 characters max');
   }
+
   if (!cvcValue) {
     createError(cvcInput, 'CVC cannot be blank');
   } else if (cvcValue.length < 3) {
