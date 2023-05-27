@@ -17,11 +17,6 @@ $('#card-number').on('input', function () {
   $('.newNum').text($(this).val());
 });
 
-// Connecting the cardInput to the card
-$('#card-number').on('input', function () {
-  $('.newNum').text($(this).val());
-});
-
 // Setting Date
 const currentYear = new Date().getFullYear();
 for (let i = currentYear; i < currentYear + 10; i += 1) {
@@ -104,11 +99,6 @@ function validate() {
   } else if (cvcValue.length < 3) {
     createError(cvcInput, '3 characters atleast');
   }
-
-  // When Everything in the form is correct, confirm and display the popup
-  $('.btn').on('click', function () {
-    $(this).css('display', 'block');
-  });
 }
 
 function removeError() {
@@ -128,6 +118,12 @@ $('.img-2').append('<div class="newCvc">000</div>');
 $('.img-3').append('<div class="newNum">0000 0000 0000 0000</div>');
 $('.img-3').append('<div class="namAndDate"><p class="cardName">Jone Carter</div>');
 $('.img-3').append('</p><date class="cardDate">02/20</date>');
+
+// Connect the popup When the input fields have no Error, the popup will show
+$('.btn').on('click', () => {
+  $('#js-comp').css('display', 'block');
+  console.log('clicked');
+});
 
 // Displaying text on the card when typing in the input field
 
