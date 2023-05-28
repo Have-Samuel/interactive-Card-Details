@@ -107,11 +107,11 @@ function validate() {
     alert('Your payment is not successful');
   }
 
-  // display of the popup message
-  // $('#js-comp').css('display', 'block');
-  // $('#js-comp').on('click', () => {
-  //   $('#js-comp').css('display', 'none');
-  // });
+  // remove the popUp
+  const offPopup = document.querySelector('#close');
+  offPopup.addEventListener('click', () => {
+    popUp.style.visibility = 'hidden';
+  });
 }
 
 function removeError() {
