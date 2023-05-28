@@ -99,6 +99,19 @@ function validate() {
   } else if (cvcValue.length < 3) {
     createError(cvcInput, '3 characters atleast');
   }
+  const popUp = document.querySelector('#js-comp');
+  if (nameValue && numValue && cvcValue) {
+    popUp.style.visibility = 'visible';
+    alert('Your payment is successful');
+  } else {
+    alert('Your payment is not successful');
+  }
+
+  // display of the popup message
+  // $('#js-comp').css('display', 'block');
+  // $('#js-comp').on('click', () => {
+  //   $('#js-comp').css('display', 'none');
+  // });
 }
 
 function removeError() {
@@ -118,17 +131,6 @@ $('.img-2').append('<div class="newCvc">000</div>');
 $('.img-3').append('<div class="newNum">0000 0000 0000 0000</div>');
 $('.img-3').append('<div class="namAndDate"><p class="cardName">Jone Carter</div>');
 $('.img-3').append('</p><date class="cardDate">02/20</date>');
-
-// Connect the popup When the input fields have no Error, the popup will show
-// Only When the field are field with no errors, so should the popup show up
-$('.btn').on('click', () => {
-  console.log('clicked');
-  if ($('.error').length > 0) {
-    $('#js-comp').css('visibility', 'hidden');
-  } else if ($('.error').length === 0) {
-    $('#js-comp').css('visibility', 'visible');
-  }
-});
 
 // Displaying text on the card when typing in the input field
 
