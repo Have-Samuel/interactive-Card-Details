@@ -23,8 +23,12 @@
         <input type="text" name="name" id="name" placeholder="e.g. Have Peace">
         <small>Error</small>
       </label>
-      <fieldset>
+      <fieldset class="form-group">
         <legend>Card Number</legend>
+        <label for="cc-1">Card Number</label>
+        <div class="cc-input">
+          <input type="tel" id="cc-1" maxlength="4" aria-label="Credit Card First 4 Digits" required pattern="[0-9]{4}"/>
+        </div>
       </fieldset>
       
 
