@@ -159,10 +159,10 @@ p {
 
 .newCvc {
   z-index: 1;
-  color: #fff;
+  color: #704343;
   text-align: end;
   margin: 4.5rem 2rem 0 0;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 11px;
   letter-spacing: 1.3px;
@@ -294,7 +294,6 @@ form button:focus {
   position: absolute;
   left: 0;
   top: 338px;
-  /* margin-top: 1rem; */
   padding: 0 20px;
   visibility: hidden;
 }

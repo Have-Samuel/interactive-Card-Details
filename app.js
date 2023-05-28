@@ -132,7 +132,7 @@ function resetForm() {
 $('.img-2').append('<div class="newCvc">000</div>');
 $('.img-3').append('<div class="newNum">0000 0000 0000 0000</div>');
 $('.img-3').append('<div class="namAndDate"><p class="cardName">Jone Carter</div>');
-$('.img-3').append('</p><date class="cardDate">02/20</date>');
+$('.img-3').append('</p><date class="cardDate">00/0000</date>');
 
 // Displaying text on the card when typing in the input field
 
