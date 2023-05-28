@@ -242,7 +242,7 @@ form button {
   border-radius: 8px;
   cursor: pointer;
   filter: drop-shadow();
-  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
+  box-shadow: rgba(18, 25, 68, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
