@@ -104,7 +104,6 @@ input[type="text"] {
 .month,
 .year,
 select {
-  /* width: 100%; */
   appearance: none;
   cursor: pointer;
   outline: none;
@@ -128,7 +127,6 @@ p {
   line-height: 15px;
   letter-spacing: 2px;
   color: #21092f;
-  margin-bottom: 4px;
 }
 
 .date-field {
