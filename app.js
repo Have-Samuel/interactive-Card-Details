@@ -122,12 +122,9 @@ $('.img-3').append('</p><date class="cardDate">02/20</date>');
 // Connect the popup When the input fields have no Error, the popup will show
 // Only When the field are field with no errors, so should the popup show up
 $('.btn').on('click', () => {
-  if ($('.error').length === 0) {
+  console.log('clicked');
+  if (('#name, #card-number, #month-js, #year-js, #cvc-js').length === 0) {
     $('#js-comp').css('visibility', 'visible');
-  } else {
-    $('#js-comp').css('visbility', 'hidden');
-  } if ($('.error').length === 0) {
-    $('#js-comp').css('opacity', '1');
   }
 });
 
