@@ -325,6 +325,30 @@ form button:focus {
   color: #8f8694;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+fieldset {
+  border: none;
+}
+
+/* Removes the legend from site but stays for the screen reader */
+fieldset legend {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -200vh;
+}
+
+.cc-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
 @media (min-width: 786px) {
   body {
     position: relative;
