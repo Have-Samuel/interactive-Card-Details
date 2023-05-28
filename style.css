@@ -419,11 +419,10 @@ form button:focus {
   }
 
   .newCvc {
-    border-radius: 8px;
     z-index: 1;
     color: #fff;
-    text-align: end;
-    margin: 7rem 3rem 0 0;
+    margin: 7.2rem 3.5rem 0 0;
+    font-size: 12px;
   }
 
   .newNum {
@@ -446,6 +445,7 @@ form button:focus {
   }
 
   .cardName {
+    font-size: 12px;
     color: #fff;
     display: flex;
     margin-left: 0;
