@@ -159,10 +159,10 @@ p {
 
 .newCvc {
   z-index: 1;
-  color: #fff;
+  color: #704343;
   text-align: end;
   margin: 4.5rem 2rem 0 0;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 11px;
   letter-spacing: 1.3px;
@@ -294,7 +294,6 @@ form button:focus {
   position: absolute;
   left: 0;
   top: 338px;
-  margin-top: 1rem;
   padding: 0 20px;
   visibility: hidden;
 }
@@ -420,11 +419,10 @@ form button:focus {
   }
 
   .newCvc {
-    border-radius: 8px;
     z-index: 1;
     color: #fff;
-    text-align: end;
-    margin: 7rem 3rem 0 0;
+    margin: 7.2rem 3.5rem 0 0;
+    font-size: 12px;
   }
 
   .newNum {
@@ -447,6 +445,7 @@ form button:focus {
   }
 
   .cardName {
+    font-size: 12px;
     color: #fff;
     display: flex;
     margin-left: 0;
