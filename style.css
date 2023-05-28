@@ -294,7 +294,7 @@ form button:focus {
   position: absolute;
   left: 0;
   top: 338px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 0 20px;
   visibility: hidden;
 }

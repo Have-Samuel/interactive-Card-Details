@@ -1,3 +1,5 @@
+/* eslint-disable func-names */
+/* eslint-disable no-alert */
 /* eslint-disable no-loop-func */
 /* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
