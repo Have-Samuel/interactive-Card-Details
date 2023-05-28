@@ -70,9 +70,9 @@ form {
   width: 327px;
 }
 
-.form__card-input.error input {
-  border-color: red;
-}
+/* form label {
+  text-transform: uppercase;
+} */
 
 .form__card-input small {
   visibility: hidden;
@@ -127,6 +127,8 @@ p {
   line-height: 15px;
   letter-spacing: 2px;
   color: #21092f;
+
+  /* text-transform: uppercase; */
 }
 
 .date-field {
@@ -347,6 +349,23 @@ fieldset legend {
 .cc-input {
   display: flex;
   gap: 0.5rem;
+}
+
+.cc-input input {
+  width: 30%;
+  font-family: monospace;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  appearance: none;
+}
+
+.form__card-input.error input {
+  border-color: red;
 }
 
 @media (min-width: 786px) {
