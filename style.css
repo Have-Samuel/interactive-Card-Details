@@ -70,10 +70,6 @@ form {
   width: 327px;
 }
 
-/* form label {
-  text-transform: uppercase;
-} */
-
 .form__card-input small {
   visibility: hidden;
   color: #f74747;
@@ -127,8 +123,10 @@ p {
   line-height: 15px;
   letter-spacing: 2px;
   color: #21092f;
+}
 
-  /* text-transform: uppercase; */
+form label {
+  text-transform: uppercase;
 }
 
 .date-field {
