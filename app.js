@@ -4,7 +4,8 @@
 /* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
-const numInput = document.querySelector('#card-number');
+// const numInput = document.querySelector('#card-number');
+const numInput = document.querySelectorAll('input[type="tel"]');
 const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
