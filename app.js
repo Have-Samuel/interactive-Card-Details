@@ -43,7 +43,7 @@ for (let i = 1; i < 13; i += 1) {
 }
 
 // Setting CVC
-cvcInput.addEventListener('.cvc', (eve) => {
+cvcInput.addEventListener('input', (eve) => {
   const { value } = eve.target;
   eve.target.value = value.replace(/\D/g, '');
 
@@ -68,7 +68,7 @@ function createError(input, message) {
   formControl.classList.add('error');
 
   if (small) {
-    console.log(small);
+    console.log('clicked!');
     small.innerText = message;
   } else {
     const small = document.createElement('small');
