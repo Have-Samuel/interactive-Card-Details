@@ -84,16 +84,16 @@ function validate() {
 
   // Regex For card number
   function isCardNumber(numValue) {
-    return /^\d{16}$/.test(numValue);
+    return /^\d{19}$/.test(numValue);
   }
+
+  numValue.addEventListener('input',
+    () => numValue.value = formatNumber(numValue.value.replaceAll('', '')));
 
   const formatNumber = (number) => number.split('').reduce((seed, next, index) => {
     if (index !== 0 && !(index % 4)) seed += '';
     return seed + next;
-  });
-
-  numInput.addEventListener('input',
-    () => numInput.value = formatNumber(numInput.value.replaceAll('', '')));
+  }, '');
 
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
