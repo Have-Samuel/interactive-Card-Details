@@ -332,26 +332,12 @@ form button:focus {
   width: 100%;
 }
 
-fieldset {
-  border: none;
-}
-
-/* Removes the legend from site but stays for the screen reader */
-fieldset legend {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: -200vh;
-}
-
 .cc-input {
   display: flex;
   gap: 0.5rem;
 }
 
 .cc-input input {
-  /* width: 30%; */
   width: 4.8rem;
   font-family: monospace;
   padding: 12px 20px;
