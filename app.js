@@ -87,6 +87,14 @@ function validate() {
     return /^\d{16}$/.test(numValue);
   }
 
+  const formatNumber = (number) => number.split('').reduce((seed, next, index) => {
+    if (index !== 0 && !(index % 4)) seed += '';
+    return seed + next;
+  });
+
+  numInput.addEventListener('input',
+    () => numInput.value = formatNumber(numInput.value.replaceAll('', '')));
+
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {

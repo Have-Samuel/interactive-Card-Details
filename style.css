@@ -125,10 +125,6 @@ p {
   color: #21092f;
 }
 
-form label {
-  text-transform: uppercase;
-}
-
 .date-field {
   margin-top: 0.4rem;
   display: flex;
