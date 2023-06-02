@@ -329,6 +329,7 @@ form button:focus {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  width: 100%;
 }
 
 fieldset {
@@ -350,7 +351,8 @@ fieldset legend {
 }
 
 .cc-input input {
-  width: 30%;
+  /* width: 30%; */
+  width: 4.8rem;
   font-family: monospace;
   padding: 12px 20px;
   margin: 8px 0;

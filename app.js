@@ -64,10 +64,11 @@ cvcInput.addEventListener('.cvc', (eve) => {
 // create Error
 function createError(input, message) {
   const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
+  const small = formControl.querySelectorAll('small');
   formControl.classList.add('error');
 
   if (small) {
+    console.log(small);
     small.innerText = message;
   } else {
     const small = document.createElement('small');
@@ -81,10 +82,10 @@ function validate() {
   const nameValue = nameInput.value.trim();
   // const numValue = numInput.value.trim();
   // Validation for card number
-  // const numValue = numInput[0].value.trim();
-  // const numValue1 = numInput[1].value.trim();
-  // const numValue2 = numInput[2].value.trim();
-  // const numValue3 = numInput[3].value.trim();
+  const numValue = numInput[0].value.trim();
+  const numValue1 = numInput[1].value.trim();
+  const numValue2 = numInput[2].value.trim();
+  const numValue3 = numInput[3].value.trim();
   const cvcValue = cvcInput.value.trim();
 
   // Regex For card number
