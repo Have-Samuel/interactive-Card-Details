@@ -43,7 +43,7 @@ for (let i = 1; i < 13; i += 1) {
 }
 
 // Setting CVC
-cvcInput.addEventListener('input', (eve) => {
+cvcInput.addEventListener('.cvc', (eve) => {
   const { value } = eve.target;
   eve.target.value = value.replace(/\D/g, '');
 
