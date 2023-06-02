@@ -87,13 +87,14 @@ function validate() {
     return /^\d{19}$/.test(numValue);
   }
 
-  numValue.addEventListener('input',
-    () => numValue.value = formatNumber(numValue.value.replaceAll('', '')));
+  // Regex For card number
 
-  const formatNumber = (number) => number.split('').reduce((seed, next, index) => {
-    if (index !== 0 && !(index % 4)) seed += '';
-    return seed + next;
-  }, '');
+  function formatCardNumber(numValue) {
+    const num = numValue.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
+    numInput.value = num;
+  }
+
+  formatCardNumber(numValue);
 
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
