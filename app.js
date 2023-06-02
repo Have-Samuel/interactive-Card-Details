@@ -87,20 +87,20 @@ function validate() {
     return /^\d{19}$/.test(numValue);
   }
 
-  // Regex For card number
-
-  function formatCardNumber(numValue) {
-    const num = numValue.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
-    numInput.value = num;
-  }
-
-  formatCardNumber(numValue);
-
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
     createError(numInput, 'Wrong format, numbers only');
   }
+
+  // spacing the card number
+  const cardNumber = document.querySelector('#card-number');
+  cardNumber.addEventListener('input', () => cardNumber.value = formatNumber(cardNumber.value.replace(' ', '')));
+
+  const formatNumber = (numValue) => numValue.split('').reduce((index, next, seed) => {
+    if (index % 4 !== 0 && index % 4) seed += '';
+    return seed + next;
+  }, '');
 
   if (!nameValue) {
     createError(nameInput, 'Name cannot be blank');
