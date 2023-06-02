@@ -4,8 +4,8 @@
 /* eslint-disable no-undef */
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
-// const numInput = document.querySelector('#card-number');
-const numInput = document.querySelectorAll('input[type="tel"]');
+const numInput = document.querySelector('#card-number');
+// const numInput = document.querySelectorAll('input[type="tel"]');
 const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
@@ -64,7 +64,7 @@ cvcInput.addEventListener('input', (eve) => {
 // create Error
 function createError(input, message) {
   const formControl = input.parentElement;
-  const small = formControl.querySelectorAll('small');
+  const small = formControl.querySelector('small');
   formControl.classList.add('error');
 
   if (small) {
@@ -87,7 +87,7 @@ function validate() {
     return /^\d{16}$/.test(numValue);
   }
 
-  if (!(numValue, numValue1, numValue2, numValue3)) {
+  if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
     createError(numInput, 'Wrong format, numbers only');
