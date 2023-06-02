@@ -81,10 +81,10 @@ function validate() {
   const nameValue = nameInput.value.trim();
   // const numValue = numInput.value.trim();
   // Validation for card number
-  const numValue = numInput[0].value.trim();
-  const numValue1 = numInput[1].value.trim();
-  const numValue2 = numInput[2].value.trim();
-  const numValue3 = numInput[3].value.trim();
+  // const numValue = numInput[0].value.trim();
+  // const numValue1 = numInput[1].value.trim();
+  // const numValue2 = numInput[2].value.trim();
+  // const numValue3 = numInput[3].value.trim();
   const cvcValue = cvcInput.value.trim();
 
   // Regex For card number
