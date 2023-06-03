@@ -446,7 +446,7 @@ form button:focus {
     z-index: 1;
     color: #fff;
     margin: 7.2rem 3.5rem 0 0;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .newNum {
@@ -469,13 +469,13 @@ form button:focus {
   }
 
   .cardName {
-    font-size: 12px;
+    font-size: 15px;
     color: #fff;
     display: flex;
-    margin-left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-left: -1.5rem;
   }
 
   .cardDate {
@@ -484,6 +484,6 @@ form button:focus {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    font-size: 12px;
+    font-size: 15px;
   }
 }

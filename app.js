@@ -5,7 +5,6 @@
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
 const numInput = document.querySelector('#card-number');
-// const numInput = document.querySelectorAll('input[type="tel"]');
 const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
@@ -95,23 +94,18 @@ function validate() {
 
   // Regex For card number
   function isCardNumber(numValue) {
-    return /^\d{19}$/.test(numValue);
+    return /^\d{4} \d{4} \d{4} \d{4}$/.test(numValue);
   }
 
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
-    // createError(numInput, 'Wrong format, numbers only');
+    createError(numInput, 'Wrong format, numbers only');
   } else if (numValue.length < 19) {
     createError(numInput, '19 characters atleast');
-  } else {
-    const valuesOfInput = numValue.replaceAll(' ', '');
-    numInput.value = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3 $4');
   }
 
   // spacing the card number
-  // const cardNumber = document.querySelector('#card-number');
-
   numInput.addEventListener('keyup', (eve) => {
     if (!eve.target.value) {
       cardNumberText.innerText = '0000 0000 0000 0000';
@@ -135,6 +129,8 @@ function validate() {
 
   if (!nameValue) {
     createError(nameInput, 'Name cannot be blank');
+  } else if (nameValue.length < 4) {
+    createError(nameInput, '4 characters atleast');
   }
 
   if (!cvcValue) {
@@ -170,7 +166,6 @@ function resetForm() {
 }
 
 // Displaying text on the card when typing in the input field
-
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
   removeError();
