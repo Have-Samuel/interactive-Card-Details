@@ -31,10 +31,13 @@ Users should be able to:
 ### Screenshot
 ### Mobile
 ![](./design/mobile-design.jpg)
+#### Payment Done!
 ![](./design/complete-state-mobile.jpg)
 ### Desktop
 ![](./design/desktop-design.jpg)
+#### Payment Done!
 ![](./design/complete-state-desktop.jpg)
+#### Error Detaction!
 ![](./design/active-states.jpg)
 
 ### Links
