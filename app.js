@@ -101,7 +101,12 @@ function validate() {
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
-    createError(numInput, 'Wrong format, numbers only');
+    // createError(numInput, 'Wrong format, numbers only');
+  } else if (numValue.length < 19) {
+    createError(numInput, '19 characters atleast');
+  } else {
+    const valuesOfInput = numValue.replaceAll(' ', '');
+    numInput.value = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3 $4');
   }
 
   // spacing the card number
