@@ -95,12 +95,19 @@ function validate() {
 
   // spacing the card number
   const cardNumber = document.querySelector('#card-number');
-  cardNumber.addEventListener('input', () => cardNumber.value = formatNumber(cardNumber.value.replace(' ', '')));
 
-  const formatNumber = (numValue) => numValue.split('').reduce((index, next, seed) => {
-    if (index % 4 !== 0 && index % 4) seed += '';
-    return seed + next;
-  }, '');
+  cardNumber.addEventListener('input', (eve) => {
+    const { value } = eve.target;
+    eve.target.value = value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ');
+
+    if (value.length > 19) {
+      eve.target.value = value.slice(0, 19);
+    } else if (value.length < 19) {
+      eve.target.value = value.slice(0, 19);
+    } else {
+      eve.target.value = value;
+    }
+  });
 
   if (!nameValue) {
     createError(nameInput, 'Name cannot be blank');
