@@ -5,7 +5,6 @@
 const form = document.querySelector('#form-js');
 const nameInput = document.querySelector('#name');
 const numInput = document.querySelector('#card-number');
-// const numInput = document.querySelectorAll('input[type="tel"]');
 const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
@@ -110,8 +109,6 @@ function validate() {
   }
 
   // spacing the card number
-  // const cardNumber = document.querySelector('#card-number');
-
   numInput.addEventListener('keyup', (eve) => {
     if (!eve.target.value) {
       cardNumberText.innerText = '0000 0000 0000 0000';
@@ -170,7 +167,6 @@ function resetForm() {
 }
 
 // Displaying text on the card when typing in the input field
-
 form.addEventListener('submit', (eve) => {
   eve.preventDefault();
   removeError();
