@@ -105,9 +105,9 @@ function validate() {
   }
 
   // spacing the card number
-  const cardNumber = document.querySelector('#card-number');
+  // const cardNumber = document.querySelector('#card-number');
 
-  cardNumber.addEventListener('keyup', (eve) => {
+  numInput.addEventListener('keyup', (eve) => {
     if (!eve.target.value) {
       cardNumberText.innerText = '0000 0000 0000 0000';
     } else {
