@@ -10,6 +10,17 @@ const monthInput = document.querySelector('#month-js');
 const yearInput = document.querySelector('[data-expiration-year]');
 const cvcInput = document.querySelector('#cvc-js');
 
+// Using Jquery
+const cardNumberText = $('.img-3');
+const cardCvcText = $('.img-2');
+const cardNameText = $('.img-3');
+const cardDateText = $('.img-3');
+
+$(cardCvcText).append('<div class="newCvc">000</div>');
+$(cardNumberText).append('<div class="newNum">0000 0000 0000 0000</div>');
+$(cardNameText).append('<div class="namAndDate"><p class="cardName">My Name</div>');
+$(cardDateText).append('</p><date class="cardDate">00/0000</date>');
+
 // Connecting the nameInput to the card
 $('#name').on('input', function () {
   $('.cardName').text($(this).val());
@@ -96,16 +107,24 @@ function validate() {
   // spacing the card number
   const cardNumber = document.querySelector('#card-number');
 
-  cardNumber.addEventListener('input', (eve) => {
-    const { value } = eve.target;
-    eve.target.value = value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ');
-
-    if (value.length > 19) {
-      eve.target.value = value.slice(0, 19);
-    } else if (value.length < 19) {
-      eve.target.value = value.slice(0, 19);
+  cardNumber.addEventListener('keyup', (eve) => {
+    if (!eve.target.value) {
+      cardNumberText.innerText = '0000 0000 0000 0000';
     } else {
-      eve.target.value = value;
+      const valuesOfInput = eve.target.value.replaceAll(' ', '');
+
+      if (eve.target.value.length > 14) {
+        eve.target.value = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3 $4');
+        cardNumberText.innerHMTL = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3 $4');
+      } else if (eve.target.value.length > 9) {
+        eve.target.value = valuesOfInput.replace(/(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3');
+        cardNumberText.innerHMTL = valuesOfInput.replace(/(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3');
+      } else if (eve.target.value.length > 4) {
+        eve.target.value = valuesOfInput.replace(/(\d{4})(\d{0,4})/, '$1 $2');
+        cardNumberText.innerHMTL = valuesOfInput.replace(/(\d{4})(\d{0,4})/, '$1 $2');
+      } else {
+        cardNumberText.innerHMTL = valuesOfInput;
+      }
     }
   });
 
@@ -144,12 +163,6 @@ function removeError() {
 function resetForm() {
   form.reset();
 }
-
-// Using Jquery
-$('.img-2').append('<div class="newCvc">000</div>');
-$('.img-3').append('<div class="newNum">0000 0000 0000 0000</div>');
-$('.img-3').append('<div class="namAndDate"><p class="cardName">My Name</div>');
-$('.img-3').append('</p><date class="cardDate">00/0000</date>');
 
 // Displaying text on the card when typing in the input field
 
