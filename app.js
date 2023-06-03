@@ -94,18 +94,15 @@ function validate() {
 
   // Regex For card number
   function isCardNumber(numValue) {
-    return /^\d{19}$/.test(numValue);
+    return /^\d{4} \d{4} \d{4} \d{4}$/.test(numValue);
   }
 
   if (!(numValue)) {
     createError(numInput, 'Number cannot be blank');
   } else if (!isCardNumber(numValue)) {
-    // createError(numInput, 'Wrong format, numbers only');
+    createError(numInput, 'Wrong format, numbers only');
   } else if (numValue.length < 19) {
     createError(numInput, '19 characters atleast');
-  } else {
-    const valuesOfInput = numValue.replaceAll(' ', '');
-    numInput.value = valuesOfInput.replace(/(\d{4})(\d{4})(\d{4})(\d{0,4})/, '$1 $2 $3 $4');
   }
 
   // spacing the card number
@@ -132,6 +129,8 @@ function validate() {
 
   if (!nameValue) {
     createError(nameInput, 'Name cannot be blank');
+  } else if (nameValue.length < 4) {
+    createError(nameInput, '4 characters atleast');
   }
 
   if (!cvcValue) {
