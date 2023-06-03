@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 - [Github](https://github.com/Have-Samuel/interactive-Card-Details)
-- [Live Link]()
+- [Live Link](https://cc-kashata-d11e95.netlify.app/)
 
 ### Built with
 
