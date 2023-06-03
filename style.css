@@ -185,6 +185,7 @@ p {
   font-weight: 500;
   line-height: 11px;
   letter-spacing: 1.3px;
+  margin-bottom: 0.3rem;
 }
 
 .cardDate {
@@ -198,7 +199,7 @@ p {
   font-weight: 500;
   line-height: 11px;
   letter-spacing: 1.3px;
-  margin: -1.3rem 2rem 0 0;
+  margin: -1rem 2rem 0 0;
   padding-bottom: 3rem;
 }
 
