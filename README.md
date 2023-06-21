@@ -71,7 +71,7 @@ Users should be able to:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Have-Samuel/ping-single-column/issues).
+Feel free to check the [issues page](https://github.com/Have-Samuel/interactive-Card-Details/issues).
 
 ## Show your support
 
