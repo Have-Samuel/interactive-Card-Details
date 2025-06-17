@@ -18,6 +18,7 @@ aside {
   margin: 5rem auto;
   background-color: #fff;
   position: relative;
+  border-radius: 20px;
 }
 
 .img-1 {
