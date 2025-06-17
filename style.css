@@ -378,6 +378,7 @@ form button:focus {
     top: 0;
     width: 483px;
     height: 850px;
+    border-radius: 20px 0 0 20px;
   }
 
   .img-2 {
